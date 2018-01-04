@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/lucene-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/lucene-analyzers-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/lucene-spellchecker-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/stanford-ner.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/stanford-ner-3.2.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/stanford-ner-3.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/stanford-ner-2013-06-20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/lucene-highlighter-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/poi-scratchpad-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/lucene-analyzers-3.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jena-arq-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jena-iri-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jena-sdb-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jena-tdb-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jena/jena-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/opencsv-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SONY/Desktop/Jars/ws4j-1.0.1.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,254 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>Error page</title>
+<style type="text/css">
+<!--
+.text {
+	font-size: 10pt;
+	font-family: Arial;
+	color: #000000;
+}
+
+.br {
+	font-size: 2pt;
+	font-family: Arial;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: Arial;
+	color: #cc3333
+}
+
+.link {
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial;
+	color: navy
+}
+-->
+</style>
+
+
+	<script>
+		if(window.location.href.indexOf("donotredirect") == -1 && window.location.href.indexOf("toierrorfound") == -1){
+			window.location.href="http://timesofindia.indiatimes.com/toierrorfound.cms?url=" + window.location.href;
+		}
+	</script>
+
+
+</head>
+
+
+
+<body bgcolor="#ffffff" text="#000000" leftmargin="0" topmargin="0"
+	marginwidth="0" marginheight="0">
+
+
+
+	<!-- Starting head -->
+
+
+
+	<table border=0 cellpadding=2 cellspacing=0 width="768" align=center>
+
+		<tr>
+
+			<td align=left valign=middle><a href=http://www.indiatimes.com>
+
+					<img
+					src="http://photogallery.indiatimes.com/photo.cms?msid=1561487"
+					width=233 height=43 border=0>
+			</a></td>
+
+		</tr>
+
+
+
+		<tr>
+
+			<td>
+
+				<hr size=0 noshade width=100%>
+			</td>
+
+		</tr>
+
+
+
+		<tr>
+
+			<td></td>
+		</tr>
+
+	</table>
+
+
+
+
+
+
+
+	<table width=768 border=0 cellspacing=0 cellpadding=2 align=center>
+
+		<tr>
+
+			<td class=text><span class=title>&gt;&gt; Page not found</span><span
+				class=br><br>&nbsp;<br>&nbsp;<br> </span> The page
+				you have requested might no longer exist, has had its name changed,
+				or is temporarily unavailable.<br> <br> <b>Suggestions:</b><span
+				class=br><br>&nbsp;<br> </span> <b>&#149;</b> If you typed
+				the page address/URL, make sure it is spelt correctly.<span class=br><br>&nbsp;<br>
+			</span> <b>&#149;</b> Open the Indiatimes.com <a
+				href=http://www.indiatimes.com class=link>homepage</a> or <a
+				href=http://in.indiatimes.com/sitemap.cms class=link>sitemap</a> and
+				look for links to the information you want.<span class=br><br>&nbsp;<br>
+			</span> <b>&#149;</b> Use the "Back" button on your browser to return to the
+				previous page.<span class=br><br>&nbsp;<br> </span></td>
+
+		</tr>
+
+	</table>
+
+	<script type="text/javascript">
+		var GOOG_FIXURL_LANG = 'en';
+
+		var GOOG_FIXURL_SITE = 'http://www.timesofindia.com'
+	</script>
+
+
+	<b><h3>Other things to try:</h3></b>
+	<br> Search
+	<b><span id="hostname"></span></b>
+	<form name="searchbox_demo" id="searchbox_demo" method="POST"
+		target="_parent">
+		<!-- <input type="hidden" name="cref" value="" />
+  <input type="hidden" name="ie" value="utf-8" />
+  <input type="hidden" name="hl" value="" />-->
+		<input name="query" id="query" type="text" size="40" value="" /> <input
+			type="submit" value="Search" onclick="return submitForm();" />
+	</form>
+	<script type="text/javascript">
+		var url;
+		try {
+			url = top.window.location.pathname;
+			url = url.replace('cms', '');
+		} catch (err) {
+			url = window.location.pathname;
+
+		}
+
+		var host = window.location.hostname;
+		url = url.replace(/\/|articleshow\/\d+.cms/g, ' ');
+		url = url.replace(/\s+/g, '-');
+		url = url.substring(1, url.length - 1);
+		document.getElementById("hostname").innerHTML = window.location.hostname;
+		document.searchbox_demo.query.value = url;
+		function submitForm() {
+			//alert(url);
+			//alert(document.getElementById('query').value);	
+			var term = document.getElementById('query').value;
+			if (term == "" || term.legnth == 0) {
+				alert("Please enter search term");
+				return false;
+			}
+			if (host == 'timesofindia.indiatimes.com') {
+				document.getElementById('searchbox_demo').setAttribute(
+						'action', 'http://' + host + '/topic/' + term);
+				document.searchbox_demo.submit();
+			} else if (host == 'economictimes.indiatimes.com') {
+				document.getElementById('searchbox_demo').setAttribute(
+						'action', 'http://' + host + '/topic/' + term);
+				document.searchbox_demo.submit();
+			} else if (host == 'zoomtv.indiatimes.com') {
+				document.getElementById('searchbox_demo').setAttribute(
+						'action', 'http://' + host + '/topic/' + term);
+				document.searchbox_demo.submit();
+			} else {
+				document.getElementById('searchbox_demo').setAttribute(
+						'action',
+						'http://timesofindia.indiatimes.com/topic/' + term);
+				document.searchbox_demo.submit();
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+<!-- Details Exception----
+com.times.exception.GenericException: There is no actual url mapped for this short url,  msg: java.lang.Exception: There is no actual url mapped for this short url
+	at com.times.interceptor.CMSRequestInterceptor.handleTinyVirtualURL(CMSRequestInterceptor.java:1297)
+	at com.times.interceptor.CMSRequestInterceptor.preHandle(CMSRequestInterceptor.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:865)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:807)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:571)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:501)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.jboss.web.tomcat.filters.ReplyHeaderFilter.doFilter(ReplyHeaderFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:230)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:173)
+	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:182)
+	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:84)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:104)
+	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:157)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:241)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:437)
+	at org.apache.coyote.ajp.AjpProtocol$AjpConnectionHandler.process(AjpProtocol.java:381)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:619)
+
+	at com.times.interceptor.CMSRequestInterceptor.handleTinyVirtualURL(CMSRequestInterceptor.java:1298)
+	at com.times.interceptor.CMSRequestInterceptor.preHandle(CMSRequestInterceptor.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:865)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:807)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:571)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:501)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.jboss.web.tomcat.filters.ReplyHeaderFilter.doFilter(ReplyHeaderFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:230)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:173)
+	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:182)
+	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:84)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:104)
+	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:157)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:241)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:437)
+	at org.apache.coyote.ajp.AjpProtocol$AjpConnectionHandler.process(AjpProtocol.java:381)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.lang.Exception: There is no actual url mapped for this short url
+	at com.times.interceptor.CMSRequestInterceptor.handleTinyVirtualURL(CMSRequestInterceptor.java:1297)
+	... 25 more
+
+ -->
